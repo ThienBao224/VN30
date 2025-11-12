@@ -436,7 +436,7 @@ def tab_portfolio():
     selected = st.multiselect(
         "📌 Chọn cổ phiếu để so sánh xu hướng", 
         tickers, 
-        default=["FPT", "VCB", "VNM"]
+        default=["FPT", "VNM", "VCB", "HPG", "SSI", "MWG"]
     )
 
     if not selected:
@@ -528,3 +528,4 @@ elif tab == "Monte Carlo Simulation":
     tab_montecarlo()
 elif tab == "Portfolio Trend":
     tab_portfolio()
+
